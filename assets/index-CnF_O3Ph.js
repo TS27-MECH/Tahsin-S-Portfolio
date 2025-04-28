@@ -80,13 +80,13 @@ Error generating stack: `+a.message+`
               hover:-translate-y-1 hover:border-blue-500/30\r
               hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]\r
               transition-all\r
-            `,children:[b.jsx("h3",{className:"text-xl font-bold mb-2",children:"Project 3"}),b.jsx("p",{className:"text-gray-400 mb-4",children:"........."}),b.jsx("div",{className:"flex flex-wrap gap-2 mb-4",children:["","","",""].map(h=>b.jsx("span",{className:`\r
+            `,children:[b.jsx("h3",{className:"text-xl font-bold mb-2",children:"Project 3"}),b.jsx("p",{className:"text-gray-400 mb-4",children:"........."}),b.jsx("div",{className:"flex flex-wrap gap-2 mb-4",children:["","","","","",""].map(h=>b.jsx("span",{className:`\r
                       bg-blue-500/10 text-blue-500 py-1 px-3 \r
                       rounded-full text-sm\r
                       transition\r
                       hover:bg-blue-500/20 hover:-translate-y-0.5\r
                       hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]\r
-                    `,children:h},h))}),b.jsx("div",{className:"flex justify-between items-center",children:b.jsx("a",{href:"#",className:"text-blue-400 hover:text-blue-300 transition-colors my-4",children:"View Project →"})})]}),b.jsxs("div",{className:`\r
+                    `,children:h},h))}),b.jsx("div",{className:"flex justify-between items-center",children:b.jsx("a",{href:"https://www.youtube.com/",className:"text-blue-400 hover:text-blue-300 transition-colors my-4",children:"View Project →"})})]}),b.jsxs("div",{className:`\r
               glass p-6 rounded-xl border border-white/10 \r
               hover:-translate-y-1 hover:border-blue-500/30\r
               hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]\r
