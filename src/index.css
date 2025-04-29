@@ -47,3 +47,11 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Mobile tap glow effect */
+@media (hover: none) and (pointer: coarse) {
+  .glow-on-tap:active {
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+    border-color: rgba(59, 130, 246, 0.3);
+  }
+}
