@@ -7,7 +7,7 @@
 
 ---
 
-Welcome to my **Personal Portfolio** — a sleek, responsive web application built with **React**, **Vite**, and **Tailwind CSS**, and proudly hosted on **GitHub Pages**.
+Welcome to my **Personal Portfolio** — a sleek, responsive web application built with **React**, **Vite**, and **Tailwind CSS**, and hosted on **GitHub Pages**.
 
 "I am an aspiring Mechanical Engineer, embarking on my academic journey at the Military Institute of Science and Technology (MIST), Bangladesh, beginning in 2025.
 "This portfolio is a reflection of my passion for engineering, innovation, and continuous growth.
@@ -35,7 +35,6 @@ Welcome to my **Personal Portfolio** — a sleek, responsive web application bui
 ## 🌐 Live Site
 
 🔗 [Visit My Portfolio](https://ts27-mech.github.io/Tahsin-S-Portfolio/)  
-*(Replace this link with your actual GitHub Pages URL.)*
 
 ---
 
@@ -49,7 +48,7 @@ serving as a living showcase of my skills, projects, and achievements.
 ## 📬 Contact
 
 - **Email**: tahsin.s2705@gmail.com
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/)
+- **LinkedIn**: https://www.linkedin.com/
 ---
 
 > _"The future belongs to those who prepare for it today."_  
