@@ -38,7 +38,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                 href="https://github.com/TS27-MECH"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white transform hover:scale-110 transition-transform duration-300 text-xl"
+                className="text-gray-300 hover:text-blue-600 transform hover:scale-110 transition-transform duration-300 text-xl"
               >
                 <FaGithubSquare />
               </a>
