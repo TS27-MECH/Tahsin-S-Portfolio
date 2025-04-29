@@ -51,7 +51,7 @@ body {
 /* Mobile tap glow + movement effect */
 @media (hover: none) and (pointer: coarse) {
   .glow-on-tap {
-    transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   }
 
   .glow-on-tap:active {
