@@ -2,14 +2,14 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
   const EngineeringSkills = [
-      "SolidWorks",
-      "AutoCAD",
-      "MATLAB",
-      "Thermodynamics",
-      "Fluid Mechanics",
-      "Maintenance",
-    ];
-    
+    "SolidWorks",
+    "AutoCAD",
+    "MATLAB",
+    "Thermodynamics",
+    "Fluid Mechanics",
+    "Maintenance",
+  ];
+
   return (
     <section
       id="about"
@@ -22,34 +22,32 @@ export const About = () => {
             About Me
           </h2>
 
-          <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+          <div className="glow-on-tap p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
             <p className="text-gray-300 mb-6">
-            "Driven mechanical engineering student with a passion for designing efficient systems 
-            and solving practical challenges to improve industries and everyday life."
+              "Driven mechanical engineering student with a passion for designing efficient systems 
+              and solving practical challenges to improve industries and everyday life."
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+              <div className="glow-on-tap rounded-xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4"> Technical Expertise</h3>
                 <div className="flex flex-wrap gap-2">
                   {EngineeringSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-blue-500/10 text-blue-300 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition
-                    "
+                      className="glow-on-tap bg-blue-500/10 text-blue-300 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
+                        hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
               </div>
-
             </div>
-         </div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-          <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+            <div className="glow-on-tap p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
@@ -61,27 +59,17 @@ export const About = () => {
                 </li>
               </ul>
             </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+
+            <div className="glow-on-tap p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
               <div className="space-y-4 text-gray-300">
                 <div>
-                  <h4 className="font-semibold">
-                    {" "}
-                    {" "}
-                  </h4>
-                  <p>
-                
-                  </p>
+                  <h4 className="font-semibold">{" "}</h4>
+                  <p></p>
                 </div>
-
                 <div>
-                  <h4 className="font-semibold">
-                    {" "}
-                    {" "}
-                  </h4>
-                  <p>
-                  
-                  </p>
+                  <h4 className="font-semibold">{" "}</h4>
+                  <p></p>
                 </div>
               </div>
             </div>

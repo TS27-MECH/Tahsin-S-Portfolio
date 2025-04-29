@@ -21,7 +21,7 @@ export const Home = () => {
             {/* View Projects Button */}
             <a
               href="#projects"
-              className="bg-blue-500 text-white py-3 px-6 rounded font-bold transition-all duration-300
+              className="glow-on-tap bg-blue-500 text-white py-3 px-6 rounded font-bold transition-all duration-300
                 hover:-translate-y-0.5 hover:shadow-[0_0_10px_rgba(59,130,246,0.25)]"
             >
               View Projects
@@ -29,11 +29,10 @@ export const Home = () => {
 
             {/* Resume Button with animated icon */}
             <a
-              href="/TahsinSarker_Resume.pdf" // Your resume file in /public
+              href="/TahsinSarker_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-            
-              className="group flex items-center gap-2 border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-bold transition-all duration-300
+              className="glow-on-tap group flex items-center gap-2 border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-bold transition-all duration-300
                 hover:-translate-y-0.5 hover:shadow-[0_0_8px_rgba(59,130,246,0.2)] hover:bg-blue-500/10"
             >
               <span>Resume</span>

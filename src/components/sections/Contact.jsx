@@ -8,18 +8,15 @@ export const Contact = () => {
     email: "",
     message: "",
   });
-  const Service_ID = "service_557pcux"
-  const Template_ID = "template_gn9axys"
-  const Public_key = "kTPnV3fuYdJmBblwx"
-  
-  
+  const Service_ID = "service_557pcux";
+  const Template_ID = "template_gn9axys";
+  const Public_key = "kTPnV3fuYdJmBblwx";
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        Service_ID, Template_ID, e.target, Public_key
-      )
+      .sendForm(Service_ID, Template_ID, e.target, Public_key)
       .then((result) => {
         alert("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
@@ -86,7 +83,7 @@ export const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+              className="glow-on-tap w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
             >
               Send Message
             </button>
