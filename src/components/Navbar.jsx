@@ -21,7 +21,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             {/* Social Media Icons */}
             <div className="flex space-x-3">
               <a
-                href="https://www.linkedin.com/in/tahsin-sarker-b9777b363"
+                href="https://www.linkedin.com/in/tahsin-sarker-b9777b363/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-blue-400 transform hover:scale-110 transition-transform duration-300 text-xl"
