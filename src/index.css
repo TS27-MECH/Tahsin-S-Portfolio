@@ -60,3 +60,11 @@ body {
     border-color: rgba(59, 130, 246, 0.3);
   }
 }
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
