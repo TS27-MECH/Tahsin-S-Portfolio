@@ -5,7 +5,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 const projectData = [
   {
     title: "Project 1",
-    image: "https://via.placeholder.com/300x180",
+    image: "/ts-logo.png", // Replace with your local image or URL
     description:
       "This is a longer description for Project 1 to test layout wrapping. It should automatically wrap without breaking the card layout or overflowing.",
     tags: ["Mobile", "Responsive", "UI"],
@@ -13,19 +13,18 @@ const projectData = [
   },
   {
     title: "Project 2",
-    image: "https://via.placeholder.com/300x180",
-    description: "Description for Project 2",
-    tags: ["React", "Tailwind"],
+    image: "/ts-logo.png",
+    description: "Brief description",
+    tags: ["Design", "System"],
     link: "#",
   },
   {
     title: "Project 3",
-    image: "https://via.placeholder.com/300x180",
-    description: "Description for Project 3",
-    tags: ["JSX", "WebDev"],
+    image: "/ts-logo.png",
+    description: "Another short desc",
+    tags: ["App", "React"],
     link: "#",
   },
-  // Add more projects...
 ];
 
 export const Projects = () => {
@@ -42,50 +41,39 @@ export const Projects = () => {
   };
 
   return (
-    <section id="projects" className="min-h-screen py-28 flex flex-col items-center">
+    <section
+      id="projects"
+      className="min-h-screen py-28 flex flex-col items-center"
+    >
       <RevealOnScroll>
         <h2 className="text-3xl font-bold mb-10 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
           Featured Projects
         </h2>
 
         <div className="relative w-full max-w-6xl">
-          {/* Desktop Arrows */}
+          {/* Arrows visible on both mobile and desktop */}
           <button
             onClick={() => scroll("left")}
-            className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10 p-2 bg-black/50 rounded-full hover:bg-blue-500/20 transition backdrop-blur"
+            className="absolute left-1 top-1/2 -translate-y-1/2 z-10 p-2 bg-black/40 rounded-full backdrop-blur hover:bg-blue-500/20 transition"
           >
             <ChevronLeft className="text-blue-400" />
           </button>
           <button
             onClick={() => scroll("right")}
-            className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10 p-2 bg-black/50 rounded-full hover:bg-blue-500/20 transition backdrop-blur"
+            className="absolute right-1 top-1/2 -translate-y-1/2 z-10 p-2 bg-black/40 rounded-full backdrop-blur hover:bg-blue-500/20 transition"
           >
             <ChevronRight className="text-blue-400" />
           </button>
 
-          {/* Mobile Arrows */}
-          <button
-            onClick={() => scroll("left")}
-            className="md:hidden absolute left-2 top-1/2 -translate-y-1/2 z-10 p-2 bg-black/40 rounded-full backdrop-blur-sm"
-          >
-            <ChevronLeft className="text-blue-400" />
-          </button>
-          <button
-            onClick={() => scroll("right")}
-            className="md:hidden absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 bg-black/40 rounded-full backdrop-blur-sm"
-          >
-            <ChevronRight className="text-blue-400" />
-          </button>
-
-          {/* Scrollable Cards */}
+          {/* Scrollable Project Cards */}
           <div
             ref={scrollRef}
-            className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide px-2 md:px-14 pt-4"
+            className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide px-4 md:px-14 pt-4"
           >
             {projectData.map((project, index) => (
               <div
                 key={index}
-                className="w-full md:w-[320px] h-auto flex-shrink-0 snap-center p-6 md:p-5 rounded-xl border border-white/10 bg-black/50 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_4px_16px_rgba(59,130,246,0.2)] transition-transform duration-300 ease-in-out backdrop-blur glow-on-tap"
+                className="snap-center shrink-0 w-[85vw] sm:w-[80vw] max-w-sm md:min-w-[320px] md:max-w-[320px] p-5 rounded-xl border border-white/10 bg-black/50 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_4px_16px_rgba(59,130,246,0.2)] transition-transform duration-300 ease-in-out backdrop-blur glow-on-tap"
               >
                 <img
                   src={project.image}
