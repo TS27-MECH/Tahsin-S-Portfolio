@@ -1,94 +1,113 @@
-import { useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { RevealOnScroll } from "../RevealOnScroll";
 
-const projectData = [
-  {
-    title: "Project 1",
-    image: "/ts-logo.png", // Replace with your local image or URL
-    description:
-      "This is a longer description for Project 1 to test layout wrapping. It should automatically wrap without breaking the card layout or overflowing.",
-    tags: ["", "","","","",""],
-    link: "#",
-  },
- 
-];
-
 export const Projects = () => {
-  const scrollRef = useRef(null);
-
-  const scroll = (direction) => {
-    if (scrollRef.current) {
-      const scrollAmount = scrollRef.current.clientWidth * 0.9;
-      scrollRef.current.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <section
       id="projects"
-      className="min-h-screen py-28 flex flex-col items-center"
+      className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <h2 className="text-3xl font-bold mb-10 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-          Featured Projects
-        </h2>
-
-        <div className="relative w-full max-w-6xl">
-          {/* Arrows visible on both mobile and desktop */}
-          <button
-            onClick={() => scroll("left")}
-            className="hidden md:block absolute left-1 top-1/2 -translate-y-1/2 z-10 p-2 bg-black/40 rounded-full backdrop-blur hover:bg-blue-500/20 transition"
-          >
-            <ChevronLeft className="text-blue-400" />
-          </button>
-          <button
-            onClick={() => scroll("right")}
-            className="hidden md:block absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 bg-black/40 rounded-full backdrop-blur hover:bg-blue-500/20 transition"
-          >
-            <ChevronRight className="text-blue-400" />
-          </button>
-
-          {/* Scrollable Project Cards */}
-          <div
-            ref={scrollRef}
-            className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide px-4 md:px-14 pt-4"
-          >
-            {projectData.map((project, index) => (
-              <div
-                key={index}
-                className="snap-center shrink-0 w-[85vw] sm:w-[80vw] max-w-sm md:min-w-[320px] md:max-w-[320px] p-5 rounded-xl border border-white/10 bg-black/50 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_4px_16px_rgba(59,130,246,0.2)] transition-transform duration-300 ease-in-out backdrop-blur glow-on-tap"
-              >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-40 object-cover rounded-md mb-4"
-                />
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-400 mb-4 break-words">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-10">
-                  {project.tags.map((tag, i) => (
-                    <span
-                      key={i}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+            {" "}
+            Featured Projects
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Project 1 */}
+            <div className="glow-on-tap p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+              <h3 className="text-xl font-bold mb-2"> Project 1</h3>
+              <p className="text-gray-400 mb-4">..............</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["", "", "", ""].map((tech, key) => (
+                  <span
+                    key={key}
+                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex justify-between items-center">
                 <a
-                  href={project.link}
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                  href="#"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Project →
                 </a>
               </div>
-            ))}
+            </div>
+
+            {/* Project 2 */}
+            <div className="glow-on-tap glass p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)] transition-all">
+              <h3 className="text-xl font-bold mb-2">Project 2</h3>
+              <p className="text-gray-400 mb-4">...........</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["", "", "", ""].map((tech, key) => (
+                  <span
+                    key={key}
+                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm transition hover:bg-blue-500/20 hover:-translate-y-0.5 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex justify-between items-center">
+                <a
+                  href="#"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  View Project →
+                </a>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className="glow-on-tap glass p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)] transition-all">
+              <h3 className="text-xl font-bold mb-2">Project 3</h3>
+              <p className="text-gray-400 mb-4">..........</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["", "", "", ""].map((tech, key) => (
+                  <span
+                    key={key}
+                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm transition hover:bg-blue-500/20 hover:-translate-y-0.5 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex justify-between items-center">
+                <a
+                  href="#"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  View Project →
+                </a>
+              </div>
+            </div>
+
+            {/* Project 4 */}
+            <div className="glow-on-tap glass p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)] transition-all">
+              <h3 className="text-xl font-bold mb-2">Project 4</h3>
+              <p className="text-gray-400 mb-4">..........</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["", "", "", ""].map((tech, key) => (
+                  <span
+                    key={key}
+                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm transition hover:bg-blue-500/20 hover:-translate-y-0.5 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex justify-between items-center">
+                <a
+                  href="#"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  View Project →
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </RevealOnScroll>
