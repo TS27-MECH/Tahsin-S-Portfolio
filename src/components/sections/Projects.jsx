@@ -11,48 +11,7 @@ const projectData = [
     tags: ["", "","","","",""],
     link: "#",
   },
-  {
-    title: "Project 2",
-    image: "/ts-logo.png",
-    description: "Brief description",
-    tags: ["", "","","","",""],
-    link: "#",
-  },
-  {
-    title: "Project 3",
-    image: "/ts-logo.png",
-    description: "Another short desc",
-    tags: ["", "","","","",""],
-    link: "#",
-  },
-  {
-    title: "Project 4",
-    image: "/ts-logo.png",
-    description: "Brief description",
-    tags: ["", "","","","",""],
-    link: "#",
-  },
-  {
-    title: "Project 5",
-    image: "/ts-logo.png",
-    description: "Brief description",
-    tags: ["", "","","","",""],
-    link: "#",
-  },
-  {
-    title: "Project 6",
-    image: "/ts-logo.png",
-    description: "Brief description",
-    tags: ["", "","","","",""],
-    link: "#",
-  },
-  {
-    title: "Project 7",
-    image: "/ts-logo.png",
-    description: "Brief description",
-    tags: ["", "","","","",""],
-    link: "#",
-  },
+ 
 ];
 
 export const Projects = () => {
@@ -82,13 +41,13 @@ export const Projects = () => {
           {/* Arrows visible on both mobile and desktop */}
           <button
             onClick={() => scroll("left")}
-            className="absolute left-1 top-1/2 -translate-y-1/2 z-10 p-2 bg-black/40 rounded-full backdrop-blur hover:bg-blue-500/20 transition"
+            className="hidden md:block absolute left-1 top-1/2 -translate-y-1/2 z-10 p-2 bg-black/40 rounded-full backdrop-blur hover:bg-blue-500/20 transition"
           >
             <ChevronLeft className="text-blue-400" />
           </button>
           <button
             onClick={() => scroll("right")}
-            className="absolute right-1 top-1/2 -translate-y-1/2 z-10 p-2 bg-black/40 rounded-full backdrop-blur hover:bg-blue-500/20 transition"
+            className="hidden md:block absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 bg-black/40 rounded-full backdrop-blur hover:bg-blue-500/20 transition"
           >
             <ChevronRight className="text-blue-400" />
           </button>
