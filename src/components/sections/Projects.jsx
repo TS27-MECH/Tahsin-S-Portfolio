@@ -8,21 +8,49 @@ const projectData = [
     image: "/ts-logo.png", // Replace with your local image or URL
     description:
       "This is a longer description for Project 1 to test layout wrapping. It should automatically wrap without breaking the card layout or overflowing.",
-    tags: ["Mobile", "Responsive", "UI"],
+    tags: ["", "","","","",""],
     link: "#",
   },
   {
     title: "Project 2",
     image: "/ts-logo.png",
     description: "Brief description",
-    tags: ["Design", "System"],
+    tags: ["", "","","","",""],
     link: "#",
   },
   {
     title: "Project 3",
     image: "/ts-logo.png",
     description: "Another short desc",
-    tags: ["App", "React"],
+    tags: ["", "","","","",""],
+    link: "#",
+  },
+  {
+    title: "Project 4",
+    image: "/ts-logo.png",
+    description: "Brief description",
+    tags: ["", "","","","",""],
+    link: "#",
+  },
+  {
+    title: "Project 5",
+    image: "/ts-logo.png",
+    description: "Brief description",
+    tags: ["", "","","","",""],
+    link: "#",
+  },
+  {
+    title: "Project 6",
+    image: "/ts-logo.png",
+    description: "Brief description",
+    tags: ["", "","","","",""],
+    link: "#",
+  },
+  {
+    title: "Project 7",
+    image: "/ts-logo.png",
+    description: "Brief description",
+    tags: ["", "","","","",""],
     link: "#",
   },
 ];
