@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Project 1",
     description:
-      "A modern portfolio site showcasing animation, performance, and responsive design using React and Tailwind.",
+      "........",
     tech: ["", "", "", ""],
     image: "/images/project1.jpg",
     link: "https://yourproject1.com",
@@ -14,43 +14,36 @@ const projects = [
   {
     title: "Project 2",
     description:
-      "An e-commerce site with shopping cart, animations, and a powerful backend.",
+      "........",
     tech: ["", "", "", ""],
-    image: "/images/project2.jpg",
-    link: "https://yourproject2.com",
+    image: "/images/project1.jpg",
+    link: "https://yourproject1.com",
   },
   {
     title: "Project 3",
     description:
-      "A creative coding visual playground using canvas and Three.js with scroll effects.",
+      "........",
     tech: ["", "", "", ""],
-    image: "/images/project3.jpg",
-    link: "https://yourproject3.com",
+    image: "/images/project1.jpg",
+    link: "https://yourproject1.com",
   },
   {
     title: "Project 4",
     description:
-      "A fullstack productivity app with REST API, JWT auth, and dark mode.",
+      "........",
     tech: ["", "", "", ""],
-    image: "/images/project4.jpg",
-    link: "https://yourproject4.com",
+    image: "/images/project1.jpg",
+    link: "https://yourproject1.com",
   },
   {
     title: "Project 5",
     description:
-      "Another fullstack productivity app with modern animations and performance optimizations.",
+      "........",
     tech: ["", "", "", ""],
-    image: "/images/project4.jpg",
-    link: "https://yourproject5.com",
+    image: "/images/project1.jpg",
+    link: "https://yourproject1.com",
   },
-  {
-    title: "Project 6",
-    description:
-      "An experimental interface built with Tailwind and framer-motion for elegant interactions.",
-    tech: ["", "", "", ""],
-    image: "/images/project4.jpg",
-    link: "https://yourproject6.com",
-  },
+  
 ];
 
 export const Projects = () => {

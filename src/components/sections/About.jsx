@@ -2,12 +2,12 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
   const EngineeringSkills = [
-    "SolidWorks",
-    "AutoCAD",
-    "MATLAB",
-    "Thermodynamics",
-    "Fluid Mechanics",
-    "Maintenance",
+    "Excel",
+    "Powerpoint",
+    "",
+    "",
+    "",
+    "",
   ];
 
   return (
